@@ -10,10 +10,9 @@ bool isWoodSufficient(int h)
 {
     long long wood;
     for(int i =0 ; i < n; i++)
-    {
         if( trees[i] >= h)
             wood += (trees[i] - h) ;
-    }
+    
     return wood>=m;   // if(wood>= m ) return true; both statements are similar
 }
 

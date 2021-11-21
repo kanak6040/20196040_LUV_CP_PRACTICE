@@ -6,9 +6,9 @@ int binMultiply( int a, int b)
 {
     int ans =0;
     while(b){
-        if(b&1){
+        if(b&1)
             ans = (ans+a)%M;
-        }
+        
         a =( a + a)% M;
         b>>=1; 
     }

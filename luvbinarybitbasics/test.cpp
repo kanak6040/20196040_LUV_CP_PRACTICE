@@ -26,7 +26,8 @@ int main()
         if( i&1 ) cout<<i<<" "<< "odd"<<"\n";
         else cout<<i<<" "<<"Even"<<"\n";
     } */
-    /* for(int i= 40; i<=70 ; i++)
+    /* 
+    for(int i= 40; i<=70 ; i++)
     {
         int z= i;
         cout<< z<< " "<< (z>>1)<<" "<< (z<<1) << "\n";    //divide by two
@@ -53,7 +54,8 @@ int main()
 
     for(auto value:mini)
     {
-        if((value.second)%2 ==1){ cout<<value.first<<" "; }
+        if((value.second)&1)
+            cout<<value.first<<" ";
     } */
 
     

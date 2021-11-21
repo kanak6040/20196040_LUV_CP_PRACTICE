@@ -21,15 +21,12 @@ void enqueue(int x)
 }
 void dequeue(){
    Node *temp = front;
-   if(front==NULL) return;   //no element present
+   if(front==NULL)    //no element present
+      return;
    else if(front== rear)  //only one element
-   {
       front = rear = NULL;
-   }
    else                 //many element present
-   {
       front = front->next;
-   }
    free(temp);
 }
 void Print()

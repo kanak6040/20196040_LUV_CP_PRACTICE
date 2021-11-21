@@ -33,8 +33,6 @@ int main()
     cin >> n;
     string s;
     generate(s, n, n);
-    for(auto ele: valid){
+    for(auto ele: valid)
         cout << ele<<endl;
-    }
-
 }

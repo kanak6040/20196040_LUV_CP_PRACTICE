@@ -15,7 +15,8 @@ int main()
 		cin>> n>>q;
 		int a[n+10];
 		for(int i=1; i<= n; ++i)
-	        {cin>>a[i]; }
+	        cin>>a[i];
+			
 	    while(q--)
 		{
 		    int l,r;

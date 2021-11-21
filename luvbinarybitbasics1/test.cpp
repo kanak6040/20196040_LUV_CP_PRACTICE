@@ -22,15 +22,13 @@ int main()
 
     vector<int> masks(n,0);  // array of n, initialised with 0
 
-    for(int i=0; i< n; i++)
-    {
+    for(int i=0; i< n; i++){
         int num_workers; 
         cin>>num_workers;
 
         int mask = 000000000000000000000000000000000000;
 
-        for( int j=0; j< num_workers ; j++)
-        {
+        for( int j=0; j< num_workers ; j++){
             int day; 
             cin>> day;
 

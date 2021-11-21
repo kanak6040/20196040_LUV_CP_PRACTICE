@@ -20,31 +20,31 @@ Node *FindMin(Node *root){
 	return root;
 }
 
-Node *Getsuccessor(Node *root, int data)
-{
-	//Search the Node o(n)
-	Node *current = Find(root, data);
+// Node *Getsuccessor(Node *root, int data)
+// {
+// 	//Search the Node o(n)
+// 	Node *current = FindMn(root, data);
 
-	if(current == NULL) return NULL;
+// 	if(current == NULL) return NULL;
 
-	if(current->right!= NULL) return FindMin(current->right);
+// 	if(current->right!= NULL) return FindMin(current->right);
 
-	else{
-		Node *successor = NULL;
-		Node *ancestor = root;
-		while(ancestor != current){
-			if(current->data< ancestor->data){
-			    successor = ancestor;
-			    ancestor = ancestor->left;
-			}
-			else
-			    ancestor = ancestor->right;
-		}
-		return successor;
+// 	else{
+// 		Node *successor = NULL;
+// 		Node *ancestor = root;
+// 		while(ancestor != current){
+// 			if(current->data< ancestor->data){
+// 			    successor = ancestor;
+// 			    ancestor = ancestor->left;
+// 			}
+// 			else
+// 			    ancestor = ancestor->right;
+// 		}
+// 		return successor;
 
-	}
+// 	}
 
-}
+// }
 
 int main()
 {

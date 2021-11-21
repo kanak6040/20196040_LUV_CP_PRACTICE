@@ -48,20 +48,17 @@ int main()
     cin>>n1;
     
     vector< vector< int>> v;
-    for(i= 0; i< n1; i++)
-    {
+    for(i= 0; i< n1; i++){
         vector<int> temp;
         cin>> n2;
-        for(j=0; j< n2 ; j++)
-        {
+        for(j=0; j< n2 ; j++){
             cin>>x;
             temp.push_back(x);
         }
         v.push_back(temp);
     }
 
-    for(i= 0; i< v.size(); i++)
-    {
+    for(i= 0; i< v.size(); i++){
         for( j =0; j< v[i].size();  j++)
             cout<< v[i][j]<< " ";
         cout<<"\n";

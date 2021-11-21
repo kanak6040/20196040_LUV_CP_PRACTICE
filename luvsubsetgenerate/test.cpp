@@ -5,11 +5,8 @@ vector<vector<char>> subsets;
 void generate(vector<char> &subset, int i, vector<char> &nums)
 {
     if(i==nums.size()) 
-    {
         subsets.push_back(subset);
-    }
-    else
-    {
+    else{
         generate(subset, i+1, nums);  //ith element not taken
 
         subset.push_back(nums[i]);    //taken

@@ -17,10 +17,8 @@ int lower_bound( vector<int> &v, int element)
     while( hi- lo  >1)
     {
         int mid = (hi + lo)/2;
-        if( v[mid] < element) 
-        {
+        if( v[mid] < element)
             lo = mid +1;
-        }
         else hi = mid;
     }
     if( v[hi] >= element) return hi;
@@ -56,35 +54,29 @@ int main()
     cin >> n;
     vector <int> v(n);
     for(int i=0; i < n; i++)
-    {
         cin >> v[i];
-    }
+    
     int to_find; 
     cin >> to_find;
     int lo =0 , hi = n-1;
     int mid;
 
-    while (hi -lo > 1)
-    {
+    while (hi -lo > 1){
         int mid = (hi + lo) /2;
-        if( v[mid] < to_find){
+        if( v[mid] < to_find)
             lo = mid +1;
-        }
-        else{
+        else
             hi = mid;
-        }
     }
     if( v[lo] == to_find)
-    {
         cout<< lo +1 << endl;
-    }
+    
     else if( v[hi]== to_find)
-    {
         cout << hi +1 << endl;
-    }
-    else{
+    
+    else
         cout<< "Not found";
-    }
+    
     
  */
    /*  
@@ -96,14 +88,14 @@ int main()
         cin >> v[i];
     }
     sort(v.begin(), v.end());
-    for( auto value:v) cout<<value<<" ";
+    for( auto value:v) 
+        cout<<value<<" ";
     cout<< endl;
     int element; cin >> element;
     int lb = lower_bound(v,element);
     cout << lb <<" " << v[lb]<<  endl;
     lb = upper_bound(v,element);
     cout << lb <<" " << v[lb]<<  endl;
-
  */
 
   float x; 
@@ -117,15 +109,6 @@ int main()
     }
     cout << lo << endl;
     cout<< pow(x, 1/n);
-
-
-
-
-
-
-
-
-
 
 
 }

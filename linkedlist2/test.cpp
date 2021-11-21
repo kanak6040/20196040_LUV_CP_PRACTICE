@@ -13,7 +13,8 @@ void Insert( int x)
     Node *temp = new Node();
     temp->data=x;
     temp->link= NULL;
-    if(head!=NULL) temp->link= head;
+    if(head!=NULL) 
+        temp->link= head;
     head = temp;
 }
 

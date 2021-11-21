@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-struct Node
-{
+struct Node{
     int data;
     Node *next;
 };
 struct Node * head;
+
 void Insert( int data, int n)
 {
     Node *temp1 = new Node();

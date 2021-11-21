@@ -31,8 +31,7 @@ void myreverse()
     temp->next = NULL;
 }
 
-void Insert( int data, int n)
-{
+void Insert( int data, int n){
     Node *temp1 = new Node();
     temp1->data = data;
     temp1->next = NULL;
@@ -67,7 +66,7 @@ struct Node * Print(Node *head)
 
 int main()
 {
-     #ifndef ONLINE_JUDGE
+    #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif

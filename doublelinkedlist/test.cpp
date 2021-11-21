@@ -30,7 +30,7 @@ struct Node *GetNewNode(int x){
 void insertathead(int x)
 {
     Node *newNode = GetNewNode(x);
-    if(head== NULL){
+    if(head == NULL){
         head = newNode;
         return;
     }
@@ -42,7 +42,7 @@ void insertathead(int x)
 void Print()
 {
     Node *temp= head;
-    while(temp!=NULL){
+    while( temp != NULL ){
         cout<<temp->data<<"->";
         temp=temp->next;
     }
@@ -50,7 +50,7 @@ void Print()
 }
 void reverseprint(){
     Node*temp= head;
-    if(temp== NULL) return;
+    if(temp == NULL) return;
     while(temp->next != NULL){
         temp= temp->next;  //going to last node
     }

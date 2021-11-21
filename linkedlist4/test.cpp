@@ -44,14 +44,12 @@ void Insert( int data, int n)
 struct Node * Print(Node *head)
 {
     Node *temp= head;
-    while (temp!=NULL)
-    {
+    while (temp!=NULL){
         cout<< temp->data<<"->";
         temp= temp->next;
     }
-    if(temp==NULL);{
+    if(temp==NULL)
         cout<< "NULL";
-    }
     cout<<"\n";
     return head;
 };
@@ -117,15 +115,16 @@ int main()
     Insert(8,2);
     Insert(16,1);
     Insert(68,2);
-        Print(head);
+
+    Print(head);
     Delete(3);
-        Print(head);
+    Print(head);
     head = reverse(head);
-        Print(head);
-        Printrecursive(head);
-        
-        Printreverserecursive(head);
-        reverserecursion(head);
+    Print(head);
+    Printrecursive(head);
+    
+    Printreverserecursive(head);
+    reverserecursion(head);
     Print(head);
 }
 

@@ -34,7 +34,7 @@ int binExpIter( int a, int b)
 
 int main()
 {
-     #ifndef ONLINE_JUDGE
+    #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif

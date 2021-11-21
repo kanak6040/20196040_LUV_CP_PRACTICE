@@ -32,7 +32,7 @@ int main()
     vector <int> v(n);
     for(int i =0; i< n; i++)
         cin >> v[i];
-    auto allsubsets = subsets(v);
+    auto allsubsets = subsets(v); //subsets is a func().
 
     for( auto subset : allsubsets)
     {
@@ -42,7 +42,4 @@ int main()
         }
         cout << endl;
     }
-
-
-    
 }

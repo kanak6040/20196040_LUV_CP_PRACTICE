@@ -4,7 +4,6 @@ struct Node{
     int data;
     Node *link;
 };
-
 struct Node * top= NULL;
 
 //similar to insertion at beginning

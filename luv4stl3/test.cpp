@@ -40,7 +40,7 @@ int main()
         cout<<umap[s]<<"\n";
     } */
 
-    //print strings in exiographical order
+    //print strings in lexiographical order
  /*    set<string> set;
     int i,n; cin>>n;
     for(i=0; i<n; i++){
@@ -51,6 +51,7 @@ int main()
     for( auto pr:set){
         cout<<pr<<" ";
     } */
+
     vector<string> names;
     int i,n; cin>>n;
     for(i=0; i<n; i++){
@@ -58,6 +59,7 @@ int main()
         cin>>s;
         names.push_back(s);
     }
+    
     sort(names.begin(), names.end(),/* comparator*/ );
     for(auto chars:names)
     {

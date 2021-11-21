@@ -13,16 +13,14 @@ int main()
 
 	for(int i=0; i<=n; i++)
 	   for(int j=0; j<=n; j++)
-		   {
-			   ar[i][j]=0;
-			   pf[i][j]=0;
-		   }
+			   ar[i][j] = pf[i][j] =0;
 
 	for(int i=1; i<=n; i++)
 	   for(int j=1; j<=n; j++){
 		   cin>>ar[i][j];
 		   pf[i][j] = ar[i][j] + pf[i-1][j] + pf[j][i-1] + pf[i-1][j-1];
 	   }
+	   
 	cin>>Q;
 	while(Q--)
 	   {

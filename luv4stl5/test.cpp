@@ -14,14 +14,12 @@ int main()
    /*  map< pair<string, string>, vector<int> > m;
     int i, n, j; 
     cin>>n;
-    for(i=0; i<n; i++)
-    {
+    for(i=0; i<n; i++){
         string fn, ln;
         int ct; 
         cin>> fn >> ln>> ct;
 
-        for(j = 0; j< ct; j++)
-        {
+        for(j = 0; j< ct; j++){
             int x; 
             cin>> x;
             m[{fn,ln}].push_back(x);
