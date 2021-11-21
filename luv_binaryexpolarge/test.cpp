@@ -17,7 +17,7 @@ int binMultiply( int a, int b)
 
 int binExp( int a, int b)
 {
-    int ans =1;
+    int ans = 1 ;
     while (b>0)
     {
         if(b&1) binMultiply(ans, a);
@@ -35,6 +35,4 @@ int main()
     #endif
 
     cout<< binExp(2,4);
-
-
 }

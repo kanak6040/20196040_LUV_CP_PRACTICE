@@ -10,7 +10,7 @@ int binExpRecur1( int a, int b)
 }
 
 
-int binExpRecur2( int a, int b)
+int binExpRecur2( int a, int b)  //same
 {
     
     if(b==0) return 1;
