@@ -20,10 +20,9 @@ Node *FindMin(Node *root){
 	return root;
 }
 
-// Node *Getsuccessor(Node *root, int data)
-// {
+// Node *Getsuccessor(Node *root, int data) {
 // 	//Search the Node o(n)
-// 	Node *current = FindMn(root, data);
+// 	Node *current = FindMin(root, data);
 
 // 	if(current == NULL) return NULL;
 

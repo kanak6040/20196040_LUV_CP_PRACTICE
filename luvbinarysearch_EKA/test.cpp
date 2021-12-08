@@ -29,8 +29,7 @@ int main()
 
     long long lo =0, hi = 1e9, mid;
 
-    while( hi - lo > 1)
-    {
+    while( hi - lo > 1)  {
         mid = (lo + hi ) / 2;
         if( isWoodSufficient(hi))  //we want maximum
             lo =mid;
