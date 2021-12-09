@@ -19,7 +19,7 @@ int bfs(){
             int child_v = child.first;
             int wt = child.second;
             if( lev[cur_v] + wt < lev[child_v]){
-                lev[child_v]
+                
             }
         }
     }
