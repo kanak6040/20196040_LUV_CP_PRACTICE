@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
+
 int main() {
 
     #ifndef ONLINE_JUDGE
@@ -8,10 +9,7 @@ int main() {
     freopen("output.txt", "w", stdout);
     #endif
 
-    int t; 
-    cin >> t;
-    while(t--){
-        cout<< "Hello!";
-        }
-	return 0;
+    
+
+    return 0;
 }
